@@ -293,12 +293,14 @@ a {
     z-index: 2;
     font-size: 20px;
     top: 0;
+	border-bottom: 1px solid white;
 }
 
 .header .header-menu {
     position: absolute;
     top: 25px;
-    right: 4px
+    right: 4px;
+	display: none;
 }
 .header .header-menu.other {
     top: 18px;
@@ -678,6 +680,7 @@ a {
     z-index: 1;
     position: fixed;
     top: 0;
+    left: 0;
 }
 
 .status-menu-container.fixed {
@@ -692,38 +695,40 @@ a {
 
 .status-menu-container .status-menu {
     display: table;
-    margin: 0 auto;
+    margin: 0 0 0 200px;
     border-collapse: separate;
-    border-spacing: 40px 0;
+    border-spacing: 0;
 }
 
 .status-menu-container .status-menu .status-button {
     position: relative;
     display: table-cell;
-    padding: 12px 0;
+    padding: 13px .75em;
     margin: 0;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
     vertical-align: middle;
-    font-size: 1.6em;
-    color: #9B9B9B;
+    font-size: 1.2em;
+    color: gray;
+    font-weight: bold;
 }
 
 .status-menu-container .status-menu .status-button.on {
-    color: #787878;
+    color: white;
     font-weight: bold;
 }
 
 .status-menu-container .status-menu .status-button:after {
     position: absolute;
-    bottom: 0px;
+    top: 13px;
     left: 0px;
-    background-color: #4065BA;
+    background: none;
+    border-right: 1px solid dimgray;
     display: block;
     width: 100%;
-    height: 4px;
+    height: 15px;
     content: '';
-    opacity: 0;
+    opacity: 1;
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -747,15 +752,20 @@ a {
  */
 .status-menu-container .search-container {
     position: absolute;
-    right: 18px;
+    right: 15px;
+    top: 0;
 }
 .status-menu-container .search-container #search-button {
     display: inline-block;
-    height: 22px;
-    margin-top: 15px;
-    color: #787878;
-    font-size: 1.6em;
+    height: 18px;
+    margin-top: 7px;
+    width: 17px;
+    color: white;
+    font-size: 1.1em;
     vertical-align: middle;
+    padding: 6px 0 0 6px;
+    background: var(--main-color);
+    border-radius: 5px;
 }
 
 .status-menu-container .search-container #search-box {
@@ -763,7 +773,7 @@ a {
     width: 0;
     height: 22px;
     overflow: hidden;
-    margin-top: 13px;
+    margin-top: 7px;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     transition: width 0.3s;
