@@ -779,6 +779,7 @@ a {
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
     vertical-align: middle;
+	border-radius: 3px;
 }
 
 .status-menu-container .search-container #search-box.open {
@@ -790,6 +791,15 @@ a {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    background: #333;
+    color: lightgray;
+    padding: 0 10px;
+    font-size: 1em;
+    offset: none;
+    outline-offset: unset;
+    -webkit-appearance: none;
 }
 
 /**
