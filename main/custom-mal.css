@@ -693,7 +693,7 @@ a {
 }
 
 .status-menu-container.fixed + div.list-block {
-    margin-top: 62px;
+    margin-top: -41px;
 }
 
 .status-menu-container .status-menu {
@@ -810,7 +810,7 @@ a {
  * List Container - List Block
  */
 .list-block {
-    margin-top: 16px;
+    margin-top: -41px;
     min-height: 600px;
     padding: 0
 }
@@ -818,7 +818,7 @@ a {
 .list-unit {
     display: block;
     margin: 0 auto;
-    width: 1024px
+    width: 100%;
 }
 
 /**
@@ -827,9 +827,12 @@ a {
 .list-unit .list-status-title {
     position: relative;
     display: table;
-    background-color: #4065BA;
-    width: 1024px;
-    height: 38px
+    background-color: var(--main-color);
+    width: 100%;
+    height: 38px;
+    margin-bottom: 1em;
+    margin-right: 1px;
+    margin-left: auto;
 }
 
 .list-unit .list-status-title .text {
