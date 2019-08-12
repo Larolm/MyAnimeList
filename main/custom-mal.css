@@ -1,6 +1,6 @@
 :root{
 	--main-color: darkslategray;
-	--dark-color: #f10834;
+	--dark-color: #080e3a;
 	--light-color: #f10834;
 	--font-color: #ffffff;
 }
@@ -282,17 +282,17 @@ a {
 }
 
 .header .header-title {
-    position: absolute;
-    top: 21px;
-    background-image: url("/img/pc/ownlist/logo_mal.png");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: auto 36px;
+    position: fixed;
+    padding-top: 7px;
     display: block;
-    width: 240px;
-    height: 36px;
-    text-indent: -9999px;
-    overflow: hidden
+    width: 185px;
+    height: 33px;
+    text-indent: 0;
+    overflow: hidden;
+    background: var(--dark-color);
+    z-index: 2;
+    font-size: 20px;
+    top: 0;
 }
 
 .header .header-menu {
@@ -671,11 +671,13 @@ a {
  * List Container - Status Menu
  */
 .status-menu-container {
-    width: 1058px;
-    height: 46px;
-    background-color: #FFF;
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-color);
     border-bottom: #EBEBEB 1px solid;
-    z-index: 1
+    z-index: 1;
+    position: fixed;
+    top: 0;
 }
 
 .status-menu-container.fixed {
