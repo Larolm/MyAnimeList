@@ -235,6 +235,7 @@ body {
     text-align: center;
     font-family: tahoma, verdana, arial, sans-serif;
     font-size: 11px;
+	background-size: cover;
 }
 
 td {
@@ -568,8 +569,8 @@ a {
 
 .list-container {
     position: relative;
-    background-color: #ffffff;
-    border: #EBEBEB 1px solid;
+    background-color: transparent;
+    border: transparent;
     width: 60%;
     margin-bottom: 0;
     margin-right: 1em;
