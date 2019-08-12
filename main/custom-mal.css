@@ -570,9 +570,9 @@ a {
     position: relative;
     background-color: #ffffff;
     border: #EBEBEB 1px solid;
-    width: 1058px;
+    width: 60%;
     margin-bottom: 0;
-    margin-right: auto;
+    margin-right: 1em;
     margin-left: auto;
     text-align: left;
 }
@@ -582,7 +582,7 @@ a {
  */
 .cover-block {
     display: block;
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
@@ -590,8 +590,8 @@ a {
 
 .cover-block .image-container {
     display: table-cell;
-    padding-top: 16px;
-    width: 1024px;
+    padding-top: 0;
+    width: 100%;
 }
 
 .cover-block .image-container.hide {
@@ -599,7 +599,9 @@ a {
 }
 
 .cover-block .image-container img {
-    max-width: 1024px;
+    max-width: 100%;
+    border-radius: 0 125px;
+    border: 1px solid white;
 }
 
 /* setting icon */
@@ -766,6 +768,7 @@ a {
     padding: 6px 0 0 6px;
     background: var(--main-color);
     border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
 }
 
 .status-menu-container .search-container #search-box {
