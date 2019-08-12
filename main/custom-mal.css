@@ -1,3 +1,5 @@
+@import url(http://allfont.net/allfont.css?fonts=anime-ace-20-bb-bold);
+
 :root{
 	--main-color: darkslategray;
 	--dark-color: #080e3a;
@@ -837,14 +839,19 @@ a {
 
 .list-unit .list-status-title .text {
     display: table-cell;
-    width: 1024px;
     height: 38px;
-    font-size: 2.0em;
     color: #FFF;
+    text-align: right;
+    background: var(--main-color);
+    right: 87px;
+    position: absolute;
+    width: 500px;
+    font: inherit;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 15px 0 0;
+    border-radius: 6px;
     font-weight: bold;
-    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
-    text-align: center;
-    vertical-align: middle
 }
 
 .list-unit .list-status-title .stats {
@@ -855,8 +862,28 @@ a {
 }
 
 .list-unit .list-status-title .stats a {
-    margin-right: 8px;
+    margin-right: 1px;
     color: #FFF;
+    position: inherit;
+    width: 25px;
+    line-height: 39px;
+    right: 0;
+    background: var(--main-color);
+    font-size: 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    height: 25px;
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid #333;
+}
+
+.list-unit .list-status-title .stats a#show-stats-button {
+    right: 41px;
+}
+
+.list-unit .list-status-title .stats a .fa:before {
+    font-size: 15px;
+    padding: 0px 0 0px 5px;
 }
 
 .list-unit .list-status-title .stats a.filterd {
