@@ -1291,9 +1291,11 @@ a {
     z-index: 10;
     background: var(--dark-color);
     color: white;
-    width: 102%;
-    height: 275px;
+    width: 86%;
+    height: 258px;
+    padding: 0 5px;
     overflow-y: scroll;
+    position: absolute;
 }
 
 .list-table .more-info .more-content {
