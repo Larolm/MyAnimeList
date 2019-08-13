@@ -945,7 +945,7 @@ a {
     transition: auto;
 	position:relative;
     display: inline-flex;
-    max-width: 23%;
+    width: 23%;
     height: 275px;
     box-sizing: border-box;
     padding: 10px 1%;
