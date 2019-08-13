@@ -1121,11 +1121,11 @@ a {
     position: absolute;
 }
 
-.list-item .list-table .list-table-data .data.type {
+.list-table .list-item .list-table-data .data.type {
     display:none;
 }
 
-.list-item:hover .list-table .list-table-data .data.type {
+.list-table .list-item:hover .list-table-data .data.type {
     display: table-cell;
     position: absolute;
     background: #4682b4a8;
@@ -1136,16 +1136,16 @@ a {
     font-weight: bold;
 }
 
-.list-item .list-table .list-table-data .data.season{
+.list-table .list-item .list-table-data .data.season{
     display: none;
 }
 
-.list-item:hover .list-table .list-table-data .data.season{
+.list-table .list-item:hover .list-table-data .data.season{
     display: table-cell;
     width: 92%;
 }
 
-.list-item:hover .list-table .list-table-data .data.season a {
+.list-table .list-item:hover .list-table-data .data.season a {
     display: block;
     background: #4682b4a8;
     color: var(--font-color);
