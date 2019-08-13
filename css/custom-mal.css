@@ -261,6 +261,12 @@ body {
 	background-size: cover;
 }
 
+footer {
+    width: 60%;
+    margin-right: 1em;
+    margin-left: auto;
+}
+
 td {
     line-height: 1.5em;
 }
@@ -272,14 +278,15 @@ a {
 
 #footer-block {
     padding: 15px 0;
-    background-color: #2E51A2;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--main-color);;
     color: #FFFFFF;
     font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #copyright {
     font-size: 12px;
-    color: #9caed9;
+    color: var(--font-color);
     padding-top: 3px;
     text-align: center;
 }
