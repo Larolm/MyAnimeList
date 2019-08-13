@@ -1245,8 +1245,8 @@ a {
     color: var(--font-color);
     background: var(--main-color);
     position: absolute;
-    padding: 0px 7px;
-    right: -10px;
+    padding: 4px 10px;
+    right: 0px;
     margin-bottom: 0;
     margin-top: auto;
     font-size: 1.1em;
