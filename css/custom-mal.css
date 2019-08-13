@@ -17,6 +17,19 @@
 	--logo: "Larolm"
 }
 
+::-webkit-scrollbar {
+    background-color: var(--main-color);
+    width: 9px;
+    height: 9px;
+    border: 4px solid #191919;
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: #3c3c3c;
+    border: 4px solid transparent;
+}
+
 #advanced-options {
     position: absolute;
     top: 24px;
