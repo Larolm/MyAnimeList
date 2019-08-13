@@ -1170,7 +1170,7 @@ a {
     font-weight: bold;
     color: var(--font-color);
     background: #000000a1;
-    bottom: 0;
+    bottom: -1px;
     position: relative;
     padding: 5px 15px;
     width: 83%;
@@ -1268,17 +1268,27 @@ a {
     padding: 0 4px;
     border: 1px solid var(--dark-color);
     box-shadow: 1px 1px 5px var(--dark-color);
-    z-index: 9;
+    z-index: 11;
     border-radius: 4px;
 }
 
 .list-table .more-info {
     display: none;
-    border-bottom: #EBEBEB 1px solid;
+    border-bottom: 0;
+    z-index: 10;
+    background: var(--dark-color);
+    color: white;
+    width: 102%;
+    height: 275px;
+    overflow-y: scroll;
 }
 
 .list-table .more-info .more-content {
     padding: 10px;
+}
+
+.list-table .more-content a {
+    color: var(--main-color);
 }
 
 .list-table .list-table-data .data.tags {
