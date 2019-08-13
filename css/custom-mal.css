@@ -1133,6 +1133,8 @@ a {
 
 .list-table .list-table-header .header-title .sort-icon {
     color: var(--font-color);
+    vertical-align: sub;
+    padding: 8px 2px 0 4px;
 }
 
 
