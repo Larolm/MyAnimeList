@@ -1104,14 +1104,14 @@ a {
 
 .list-table .list-table-header .header-title .link {
     font-size: 11px;
-    color: #323232;
+    color: var(--font-color);
     text-decoration: none
 }
 
 .list-table .list-table-header .header-title .link.sort {
     position: relative;
     display: inline-block;
-    color: #323232;
+    color: var(--font-color);
     white-space: nowrap;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -1128,11 +1128,11 @@ a {
 }
 
 .list-table .list-table-header .header-title .link.sort:hover {
-    color: #2556c6
+    color: lightgray;
 }
 
 .list-table .list-table-header .header-title .sort-icon {
-    color: #1d439b;
+    color: var(--font-color);
 }
 
 
