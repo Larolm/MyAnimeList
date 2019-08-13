@@ -1104,9 +1104,7 @@ a {
     text-align: center;
     vertical-align: middle;
     border-bottom: none;
-	width: 92%;
-	height: 90%;
-	position: absolute;
+    position: absolute;
 }
 
 .list-table .list-table-data .data.image {
@@ -1161,6 +1159,9 @@ a {
     padding-left: 8px;
     text-align: left;
     padding: 0;
+    width: 90%;
+    position:absolute;
+    bottom:0;
 }
 
 .list-table .list-table-data .data.title .link {
@@ -1169,7 +1170,7 @@ a {
     color: var(--font-color);
     background: #02020291;
     bottom: -8px;
-    position: absolute;
+    position: relative;
     padding: 5px 15px;
     width: 85%;
     display: block;
@@ -1183,11 +1184,11 @@ a {
     background: var(--main-color);
     position: absolute;
     padding: 0px 7px;
-    right: -7px;
+    right: -10px;
     margin-bottom: 0;
     margin-top: auto;
     font-size: 1.1em;
-    top: 3px;
+    top: -219px;
     display: block;
     box-shadow: 2px 1px 6px darkslategrey;
 }
@@ -1264,5 +1265,5 @@ a {
 }
 
 .icon-watch, .icon-watch-pv{
-	display:none;
+	display:none !iimportant;
 }
