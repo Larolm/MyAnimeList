@@ -955,6 +955,25 @@ a {
     box-shadow: 1px 1px 6px var(--dark-color);
 }
 
+.list-container .list-unit .list-table .list-item:before {
+    transition: all 0.4s;
+    transform: translateX(-50%) translateY(-50%);
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 98%;
+    height: 98%;
+    bottom: auto;
+    right: auto;
+    background: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+}
+
 .list-table > tbody:nth-of-type(2n+1) {
     background-color: transparent;
 }
