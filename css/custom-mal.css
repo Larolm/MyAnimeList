@@ -70,7 +70,6 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 18px 8px;
@@ -88,7 +87,6 @@
 }
 
 #advanced-options select:disabled {
-    background-image: url(/img/pc/ownlist/icon_pulldown_triangle_disable.png);
     color: #9B9B9B;
 }
 
@@ -990,13 +988,38 @@ a {
  * List Container - List Table - Header
  */
 
+.list-table > tbody:first-child{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
 .list-table .list-table-header .header-title {
-    background: #F6F6F6 url("/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
-    display: table-cell;
-    border-bottom: #EBEBEB 1px solid;
-    height: 36px;
+    border-bottom: none;
+    height: 20px;
     text-align: center;
     vertical-align: middle;
+    display: none;
+    margin: 0 1px;
+    position: relative;
+    line-height: 20px;
+    background: var(--main-color);
+    border-radius: 3px;
+    padding: 2px 20px;
+    width: auto;
+}
+
+.list-table .list-table-header:after {
+    content: "";
+    height: 24px;
+    font-size: 12px;
+    background: var(--main-color);
+    width: 40px;
+    display: inline-block;
+    vertical-align: inherit;
+    border-radius: 3px 3px 60px 3px;
+    margin-left: -15px;
+    position: absolute;
 }
 
 .list-table .list-table-header .header-title:last-child {
@@ -1017,28 +1040,34 @@ a {
 }
 
 .list-table .list-table-header .header-title.title {
-    padding-left: 8px;
-    text-align: left
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
 }
 
 .list-table .list-table-header .header-title.score {
-    width: 65px
+    display: inline-block;
+    width: auto;
 }
 
 .list-table .list-table-header .header-title.type {
-    width: 60px
+    display: inline-block;
+    width: auto;
 }
 
 .list-table .list-table-header .header-title.progress {
-    width: 90px
+    display: inline-block;
+    width: auto;
 }
 
 .list-table .list-table-header .header-title.chapters {
-    width: 90px
+    display: inline-block;
+    width: auto;
 }
 
 .list-table .list-table-header .header-title.volumes {
-    width: 90px
+    display: inline-block;
+    width: auto;
 }
 
 .list-table .list-table-header .header-title.tags {
