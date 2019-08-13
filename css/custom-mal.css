@@ -1208,6 +1208,13 @@ a {
 .list-table .list-table-data .data.status .text {
     display: none
 }
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    padding: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+}
 
 .list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching {
     background-color: #2db039
