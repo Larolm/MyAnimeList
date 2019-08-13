@@ -1121,6 +1121,44 @@ a {
     position: absolute;
 }
 
+.list-item .list-table .list-table-data .data.type {
+    display:none;
+}
+
+.list-item:hover .list-table .list-table-data .data.type {
+    display: table-cell;
+    position: absolute;
+    background: #4682b4a8;
+    color: var(--font-color);
+    padding: 4px 10px !important;
+    width: auto;
+    top: 14px;
+    font-weight: bold;
+}
+
+.list-item .list-table .list-table-data .data.season{
+    display: none;
+}
+
+.list-item:hover .list-table .list-table-data .data.season{
+    display: table-cell;
+    width: 92%;
+}
+
+.list-item:hover .list-table .list-table-data .data.season a {
+    display: block;
+    background: #4682b4a8;
+    color: var(--font-color);
+    text-align: right;
+    width: auto;
+    position: absolute;
+    left: 0;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    top: 33px;
+}
+
 .list-table .list-table-data .data.image {
     width: 92%;
     height: 90%;
