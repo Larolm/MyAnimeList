@@ -8,6 +8,7 @@
 	--dark-color: #080e3a;
 	--light-color: #f10834;
 	--font-color: #ffffff;
+	--logo: "Larolm"
 }
 
 #advanced-options {
@@ -289,17 +290,24 @@ a {
 
 .header .header-title {
     position: fixed;
-    padding-top: 7px;
+    padding: 0px 1em 0 1em;
     display: block;
-    width: 185px;
-    height: 33px;
+    width: auto;
+    height: 40px;
     text-indent: 0;
     overflow: hidden;
     background: var(--dark-color);
     z-index: 2;
-    font-size: 20px;
+    font-size: 0;
     top: 0;
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: Yozakura;
+}
+
+.header .header-title:after {
+    content: var(--logo);
+    font-size: 33px;
+    padding: 0 .5em;
 }
 
 .header .header-menu {
@@ -703,7 +711,7 @@ a {
 
 .status-menu-container .status-menu {
     display: table;
-    margin: 0 0 0 200px;
+    margin: 0 0 0 125px;
     border-collapse: separate;
     border-spacing: 0;
 }
@@ -728,12 +736,13 @@ a {
 
 .status-menu-container .status-menu .status-button:after {
     position: absolute;
-    top: 13px;
-    left: 0px;
+    transform: rotate(20deg);
+    top: -5px;
+    right: -4px;
     background: none;
-    border-right: 1px solid dimgray;
+    border-right: 1.4px solid white;
     display: block;
-    width: 100%;
+    width: 100px;
     height: 15px;
     content: '';
     opacity: 1;
@@ -749,6 +758,7 @@ a {
     -o-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
+    margin: 0 0 0 auto;
 }
 
 .status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after {
