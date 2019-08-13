@@ -937,11 +937,26 @@ a {
     width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
-    border: #EBEBEB 1px solid;
+    display: inline-block;
+    border: 0;
+}
+
+.list-container .list-unit .list-table .list-item {
+    transition: auto;
+    display: inline-flex;
+    max-width: 23%;
+    height: 275px;
+    box-sizing: border-box;
+    padding: 10px 1%;
+    border-radius: 5px;
+    background-color: var(--dark-color-semi);
+    margin: 10px 1%;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px var(--dark-color);
 }
 
 .list-table > tbody:nth-of-type(2n+1) {
-    background-color: #fcfcfc;
+    background-color: transparent;
 }
 
 
