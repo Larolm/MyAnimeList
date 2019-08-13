@@ -1262,3 +1262,7 @@ a {
     font-size: 20px;
     text-align: center;
 }
+
+.icon-watch, .icon-watch-pv{
+	display:none;
+}
