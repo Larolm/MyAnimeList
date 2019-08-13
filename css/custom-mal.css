@@ -1159,24 +1159,25 @@ a {
     padding-left: 8px;
     text-align: left;
     padding: 0;
-    width: 90%;
-    position:absolute;
-    bottom:0;
+    width: 92%;
+    position: absolute;
+    bottom: 17px;
 }
 
 .list-table .list-table-data .data.title .link {
     font-size: 1.1em;
     font-weight: bold;
     color: var(--font-color);
-    background: #02020291;
-    bottom: -8px;
+    background: #000000a1;
+    bottom: 0;
     position: relative;
     padding: 5px 15px;
-    width: 85%;
+    width: 83%;
     display: block;
     vertical-align: unset;
     text-align: center;
     clear: both;
+    border-bottom: 1px solid var(--dark-color);
 }
 
 .list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
@@ -1188,9 +1189,25 @@ a {
     margin-bottom: 0;
     margin-top: auto;
     font-size: 1.1em;
-    top: -219px;
+    top: -200px;
     display: block;
     box-shadow: 2px 1px 6px darkslategrey;
+}
+
+.list-table .list-table-data .data.progress {
+    width: 59%;
+    background: #000000a1;
+    bottom: 9px;
+    font-weight: bold;
+    color: white;
+}
+
+.list-table .list-table-data .data.progress > div > span:first-child:before {
+    content: "Ep: ";
+}
+
+.list-table .list-table-data .data.progress a {
+    color: var(--font-color);
 }
 
 .list-table .list-table-data .data.score .link {
@@ -1265,5 +1282,5 @@ a {
 }
 
 .icon-watch, .icon-watch-pv{
-	display:none !iimportant;
+	display:none !important;
 }
