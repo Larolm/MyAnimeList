@@ -1354,7 +1354,7 @@ a {
 }
 
 .list-table .list-table-data .data.tags {
-    word-wrap: break-word
+    word-wrap: break-word;
     display: none;
 }
 
