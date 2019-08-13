@@ -9,8 +9,9 @@
 }
 
 :root{
-	--main-color: darkslategray;
-	--dark-color: #080e3a;
+	--main-color: steelblue;
+	--dark-color: #222;
+	--dark-color-semi: #00000070;
 	--light-color: #f10834;
 	--font-color: #ffffff;
 	--logo: "Larolm"
@@ -286,11 +287,11 @@ a {
 
 .header {
     position: relative;
-    color: #fff;
+    color: var(--main-color);
     display: block;
     width: 100%;
     height: 50px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .header .header-title {
@@ -301,12 +302,13 @@ a {
     height: 40px;
     text-indent: 0;
     overflow: hidden;
-    background: var(--dark-color);
+    background: transparent;
     z-index: 2;
     font-size: 0;
     top: 0;
-    border-bottom: 1px solid white;
     font-family: Yozakura;
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 .header .header-title:after {
@@ -620,7 +622,7 @@ a {
 .cover-block .image-container img {
     max-width: 100%;
     border-radius: 0 125px;
-    border: 1px solid white;
+    border: 2px solid var(--main-color);
 }
 
 /* setting icon */
@@ -696,8 +698,8 @@ a {
 .status-menu-container {
     width: 100%;
     height: 40px;
-    background-color: var(--dark-color);
-    border-bottom: #EBEBEB 1px solid;
+    background-color: var(--dark-color-semi);
+    border-bottom: none;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -708,15 +710,16 @@ a {
     position: fixed;
     display: block;
     top: 0;
+	background: var(--dark-color);
 }
 
 .status-menu-container.fixed + div.list-block {
-    margin-top: -41px;
+    margin-top: -30px;
 }
 
 .status-menu-container .status-menu {
     display: table;
-    margin: 0 0 0 125px;
+    margin: 0 0 0 276px;
     border-collapse: separate;
     border-spacing: 0;
 }
@@ -724,14 +727,14 @@ a {
 .status-menu-container .status-menu .status-button {
     position: relative;
     display: table-cell;
-    padding: 13px .75em;
+    padding: 10px .75em;
     margin: 0;
-    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-family: CFSamuraiBob, 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
-    vertical-align: middle;
-    font-size: 1.2em;
-    color: gray;
-    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--main-color);
+    cursor: pointer;
+    letter-spacing: 0.8px;
 }
 
 .status-menu-container .status-menu .status-button.on {
@@ -764,6 +767,7 @@ a {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     margin: 0 0 0 auto;
+	display: none;
 }
 
 .status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after {
@@ -775,11 +779,12 @@ a {
  */
 .status-menu-container .search-container {
     position: absolute;
-    right: 15px;
+    left: 115px;
     top: 0;
+    width: 0;
 }
 .status-menu-container .search-container #search-button {
-    display: inline-block;
+    display: none;
     height: 18px;
     margin-top: 7px;
     width: 17px;
@@ -789,21 +794,21 @@ a {
     padding: 6px 0 0 6px;
     background: var(--main-color);
     border-radius: 5px;
-	box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
 }
 
 .status-menu-container .search-container #search-box {
     display: inline-block;
-    width: 0;
+    width: 160px;
     height: 22px;
     overflow: hidden;
-    margin-top: 7px;
+    margin-top: 9px;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
     vertical-align: middle;
-	border-radius: 3px;
+    border-radius: 3px;
 }
 
 .status-menu-container .search-container #search-box.open {
@@ -830,7 +835,7 @@ a {
  * List Container - List Block
  */
 .list-block {
-    margin-top: -41px;
+    margin-top: -30px;
     min-height: 600px;
     padding: 0
 }
@@ -851,37 +856,36 @@ a {
     width: 100%;
     height: 38px;
     margin-bottom: 1em;
-    margin-right: 1px;
+    margin-right: 0px;
     margin-left: auto;
 }
 
 .list-unit .list-status-title .text {
     display: table-cell;
-    height: 35px;
+    height: 25px;
     color: #FFF;
     text-align: right;
     background: var(--main-color);
-    right: 84px;
+    right: 56px;
     position: absolute;
     width: auto;
     font: inherit;
     font-size: 12px;
-    line-height: 34px;
+    line-height: 24px;
     padding: 0 25px 0 50px;
-    border-radius: 100px 6px 6px 6px;
+    border-radius: 100px 2px 2px 2px;
     font-weight: bold;
-    border: 1px solid #333;
     box-shadow: 1px 1px 6px #444;
     font-family: CFSamuraiBob;
     letter-spacing: 1.7px;
     word-spacing: .3em;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .list-unit .list-status-title .stats {
     position: absolute;
-    height: 38px;
-    line-height: 38px;
+    height: 30px;
+    line-height: 30px;
     right: 0;
 }
 
@@ -889,25 +893,25 @@ a {
     margin-right: 1px;
     color: #FFF;
     position: inherit;
+    right: 0;
     width: 25px;
     line-height: 39px;
-    right: 0;
     background: var(--main-color);
     font-size: 0;
-    padding: 5px 5px;
-    border-radius: 5px;
+    border-radius: 2px;
     height: 25px;
     box-shadow: 1px 1px 5px #444;
-    border: 1px solid #333;
 }
 
 .list-unit .list-status-title .stats a#show-stats-button {
-    right: 41px;
+    right: 28px;
 }
 
 .list-unit .list-status-title .stats a .fa:before {
-    font-size: 15px;
-    padding: 0px 0 0px 5px;
+    font-size: 11px;
+    padding: 0px 0 0px 8px;
+    margin-top: -11px;
+    position: absolute;
 }
 
 .list-unit .list-status-title .stats a.filterd {
