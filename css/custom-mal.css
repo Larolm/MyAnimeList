@@ -990,8 +990,8 @@ a {
 
 .list-table > tbody:first-child{
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 4px;
+    top: 4px;
 }
 
 .list-table .list-table-header .header-title {
