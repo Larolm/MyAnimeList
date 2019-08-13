@@ -959,6 +959,18 @@ a {
     background-color: transparent;
 }
 
+.list-container .list-unit .list-table .list-item .data.image a::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 
 /**
  * List Container - List Table - Header
