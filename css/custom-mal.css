@@ -303,7 +303,7 @@ a {
     text-indent: 0;
     overflow: hidden;
     background: transparent;
-    z-index: 2;
+    z-index: 999;
     font-size: 0;
     top: 0;
     font-family: Yozakura;
@@ -711,6 +711,7 @@ a {
     display: block;
     top: 0;
 	background: var(--dark-color);
+	z-index:998;
 }
 
 .status-menu-container.fixed + div.list-block {
@@ -1161,7 +1162,7 @@ a {
     padding: 0;
     width: 92%;
     position: absolute;
-    bottom: 17px;
+    bottom: 34px;
 }
 
 .list-table .list-table-data .data.title .link {
@@ -1195,11 +1196,13 @@ a {
 }
 
 .list-table .list-table-data .data.progress {
-    width: 59%;
+    width: 84%;
     background: #000000a1;
     bottom: 9px;
     font-weight: bold;
     color: white;
+    text-align: left;
+    padding: 4px 4%;
 }
 
 .list-table .list-table-data .data.progress > div > span:first-child:before {
@@ -1216,13 +1219,57 @@ a {
 }
 
 .list-table .list-table-data .data.title .add-edit-more {
-    float: right;
-    margin-right: 10px;
-    font-size: 0.9em;
+    float: none;
+    margin-right: 0px;
+    bottom: -24px;
+    right: 55px;
+    padding: 4px 0;
+    font-size: 0;
+    position: absolute;
 }
 
 .list-table .list-table-data .data.title .more {
     position: relative;
+}
+
+.list-table .list-table-data .data.title .edit a.List_LightBox:before {
+    content: "\f040";
+    color: var(--font-color);
+    font-size: 20px;
+    font: normal normal normal 14px/1 FontAwesome;
+    background: var(--main-color);
+    width: 12px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    line-height: 20px;
+    right: -33px;
+    padding: 0px 4px;
+    border: 1px solid var(--dark-color);
+    box-shadow: 1px 1px 5px var(--dark-color);
+    z-index: 9;
+    border-radius: 4px;
+}
+
+.list-table .list-table-data .data.title .more a:before {
+    content: "\f0c9";
+    color: var(--font-color);
+    font-size: 20px;
+    font: normal normal normal 14px/1 FontAwesome;
+    background: var(--main-color);
+    width: 12px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: -12px;
+    right: -56px;
+    line-height: 20px;
+    padding: 0 4px;
+    border: 1px solid var(--dark-color);
+    box-shadow: 1px 1px 5px var(--dark-color);
+    z-index: 9;
+    border-radius: 4px;
 }
 
 .list-table .more-info {
