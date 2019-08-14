@@ -8,15 +8,6 @@
   src: url('../fonts/CFSamuraiBob.ttf')  format('truetype');
 }
 
-:root{
-	--main-color: steelblue;
-	--dark-color: #222;
-	--dark-color-semi: #000000a8;
-	--light-color: #f10834;
-	--font-color: #ffffff;
-	--logo: "Larolm"
-}
-
 ::-webkit-scrollbar {
     background-color: var(--main-color);
     width: 9px;
