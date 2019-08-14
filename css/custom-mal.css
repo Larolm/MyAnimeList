@@ -5,6 +5,7 @@
 	--light-color: #f10834;
 	--font-color: #ffffff;
 	--logo: "Larolm"
+	--curve-banner: 0 125px;
 }
 
 ::-webkit-scrollbar {
@@ -654,7 +655,7 @@ a {
 
 .cover-block .image-container img {
     max-width: 100%;
-    border-radius: 0 125px;
+    border-radius: var(--curve-banner);
     border: 2px solid rgba(var(--main-color), 1);
 }
 
