@@ -455,7 +455,9 @@ a {
 /* SVG */
 .list-menu-float .icon-menu svg.icon {
     position: absolute;
-    fill: #323232;
+    fill: var(--font-color);
+    width: 12px;
+    height: 12px;
 }
 .list-menu-float .icon-menu:hover svg.icon {
     position: absolute;
@@ -567,7 +569,7 @@ a {
 .list-menu-float .icon-menu.setting .text {
     top: 0px;
     width: 0px;
-    height: 100px;
+    height: 25px;
     opacity: 0;
     -moz-transition-property: all;
     -o-transition-property: all;
