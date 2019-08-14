@@ -1358,7 +1358,7 @@ a {
     color: var(--font-color);
 }
 
-.list-table .list-table-data .data.chapters {
+.list-table .list-table-data .data.chapter {
     width: 84%;
     background: #000000a1;
     bottom: 9px;
@@ -1368,11 +1368,11 @@ a {
     padding: 4px 4%;
 }
 
-.list-table .list-table-data .data.chapters > div > span:first-child:before {
+.list-table .list-table-data .data.chapter > div > span:first-child:before {
     content: "Chapters: ";
 }
 
-.list-table .list-table-data .data.chapters a {
+.list-table .list-table-data .data.chapter a {
     color: var(--font-color);
 }
 
