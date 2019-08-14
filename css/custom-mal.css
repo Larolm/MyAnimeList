@@ -1329,7 +1329,9 @@ a {
     opacity: 1;
 }
 
-.list-table .list-item:hover .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
+.list-table .list-item:hover .list-table-data .data.title .rewatching, 
+.list-table .list-item:hover .list-table-data .data.title .rereading, 
+.list-table .list-item:hover .list-table-data .data.title .content-status {
     visibility: hidden;
     opacity: 0;
 }
