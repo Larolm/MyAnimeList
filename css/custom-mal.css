@@ -980,12 +980,13 @@ a {
     border-collapse: collapse;
     display: inline-block;
     border: 0;
+    text-align:center;
 }
 
 .list-container .list-unit .list-table .list-item {
     position:relative;
     display: inline-flex;
-    width: 23%;
+    width: 185px;
     height: 275px;
     box-sizing: border-box;
     padding: 10px 1%;
@@ -994,6 +995,14 @@ a {
     margin: 10px 1%;
     overflow: hidden;
     box-shadow: 1px 1px 6px var(--dark-color);
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .list-table > tbody:nth-of-type(2n+1) {
@@ -1223,7 +1232,8 @@ a {
     opacity: 1;
     visibility: visible;
     display: table-cell;
-    width: 92%;
+    width: 90%;
+    margin-left:5%;
 }
 
 .list-table .list-item:hover .list-table-data .data.season a {
@@ -1241,8 +1251,10 @@ a {
 }
 
 .list-table .list-table-data .data.image {
-    width: 92%;
+    width: 90%;
+    margin-left:5%;
     height: 90%;
+    margin-top:5%;
 }
 
 .list-table .list-table-data .data.image .link {
@@ -1295,7 +1307,8 @@ a {
     padding-left: 8px;
     text-align: left;
     padding: 0;
-    width: 92%;
+    width: 90%;
+    margin-left:5%;
     position: absolute;
     bottom: 34px;
 }
@@ -1345,6 +1358,7 @@ a {
 
 .list-table .list-table-data .data.progress {
     width: 84%;
+    margin-left:5%;
     background: #000000a1;
     bottom: 9px;
     font-weight: bold;
@@ -1363,6 +1377,7 @@ a {
 
 .list-table .list-table-data .data.chapter {
     width: 84%;
+    margin-left:5%;
     background: #000000a1;
     bottom: 33px;
     font-weight: bold;
@@ -1382,6 +1397,7 @@ a {
 
 .list-table .list-table-data .data.volume {
     width: 84%;
+    margin-left:5%;
     background: #000000a1;
     bottom: 9px;
     font-weight: bold;
@@ -1398,7 +1414,8 @@ a {
     color: var(--font-color);
 }
 .list-table .list-table-data .data.score {
-    width: 92%;
+    width: 90%;
+    margin-left:5%;
 }
 
 .list-table .list-table-data .data.score:before {
