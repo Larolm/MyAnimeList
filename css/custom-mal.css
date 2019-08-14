@@ -1318,11 +1318,11 @@ a {
     background: var(--main-color);
     position: absolute;
     padding: 4px 10px;
-    right: 0px;
+    left: 0px;
     margin-bottom: 0;
     margin-top: auto;
     font-size: 1.1em;
-    top: -200px;
+    top: -195px;
     display: block;
     box-shadow: 2px 1px 6px darkslategrey;
 }
