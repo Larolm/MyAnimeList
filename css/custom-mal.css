@@ -1327,6 +1327,10 @@ a {
     box-shadow: 2px 1px 6px darkslategrey;
     visibility: visible;
     opacity: 1;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -moz-transition: visibility 0s, opacity 0.5s linear;
+    -o-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .list-table .list-item:hover .list-table-data .data.title .rewatching, 
