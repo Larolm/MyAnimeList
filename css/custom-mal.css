@@ -1287,6 +1287,9 @@ a {
     height: 68px;
     border: #EBEBEB 1px solid
 }
+.manga .list-table .list-table-data .data.title{
+    bottom: 59px;
+}
 
 .list-table .list-table-data .data.title {
     padding-left: 8px;
@@ -1361,11 +1364,12 @@ a {
 .list-table .list-table-data .data.chapter {
     width: 84%;
     background: #000000a1;
-    bottom: 9px;
+    bottom: 33px;
     font-weight: bold;
     color: white;
     text-align: left;
     padding: 4px 4%;
+    border-bottom: 1px solid black;
 }
 
 .list-table .list-table-data .data.chapter > div > span:first-child:before {
@@ -1427,6 +1431,10 @@ a {
     padding: 4px 0;
     font-size: 0;
     position: absolute;
+}
+
+.manga .list-table .list-table-data .data.title .add-edit-more {
+    bottom: -50px;
 }
 
 .list-table .list-table-data .data.title .more {
