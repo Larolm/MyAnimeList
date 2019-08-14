@@ -1315,7 +1315,7 @@ a {
 
 .list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
     color: var(--font-color);
-    background: var(--main-color);
+    background: #4682b4c2;
     position: absolute;
     padding: 4px 10px;
     left: 0px;
