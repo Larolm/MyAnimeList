@@ -1419,6 +1419,7 @@ a {
 .list-table .list-table-data .data.score {
     width: 90%;
     margin-left:5%;
+    margin-top:5%;
 }
 
 .list-table .list-table-data .data.score:before {
