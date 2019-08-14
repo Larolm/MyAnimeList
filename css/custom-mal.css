@@ -1325,6 +1325,13 @@ a {
     top: -195px;
     display: block;
     box-shadow: 2px 1px 6px darkslategrey;
+    visibility: visible;
+    opacity: 1;
+}
+
+.list-table .list-item:hover .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .list-table .list-table-data .data.progress {
