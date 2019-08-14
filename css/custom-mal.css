@@ -1368,27 +1368,27 @@ a {
     content: "\f040";
     color: var(--font-color);
     font-size: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 11px/1 FontAwesome;
     background: var(--main-color);
     width: 12px;
     height: 20px;
     display: inline-block;
     position: absolute;
     bottom: 0px;
-    line-height: 20px;
+    line-height: 21px;
     right: -33px;
-    padding: 0px 4px;
+    padding: 0px 3px 0 5px;
     border: 1px solid var(--dark-color);
     box-shadow: 1px 1px 5px var(--dark-color);
     z-index: 9;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .list-table .list-table-data .data.title .more a:before {
     content: "\f0c9";
     color: var(--font-color);
     font-size: 20px;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 12px/1 FontAwesome;
     background: var(--main-color);
     width: 12px;
     height: 20px;
@@ -1396,12 +1396,12 @@ a {
     position: absolute;
     bottom: -12px;
     right: -56px;
-    line-height: 20px;
+    line-height: 22px;
     padding: 0 4px;
     border: 1px solid var(--dark-color);
     box-shadow: 1px 1px 5px var(--dark-color);
     z-index: 11;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .list-table .more-info {
