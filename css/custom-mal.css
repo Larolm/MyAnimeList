@@ -1219,8 +1219,10 @@ a {
     color: var(--font-color);
     padding: 4px 10px !important;
     width: auto;
-    top: 14px;
+    margin-left: 5%;
+    margin-top: 5%;
     font-weight: bold;
+    top: 5px;
 }
 
 .list-table .list-item .list-table-data .data.season{
@@ -1234,6 +1236,7 @@ a {
     display: table-cell;
     width: 90%;
     margin-left:5%;
+    margin-top:5%;
 }
 
 .list-table .list-item:hover .list-table-data .data.season a {
