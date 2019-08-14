@@ -1358,6 +1358,24 @@ a {
     color: var(--font-color);
 }
 
+.list-table .list-table-data .data.chapters {
+    width: 84%;
+    background: #000000a1;
+    bottom: 9px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    padding: 4px 4%;
+}
+
+.list-table .list-table-data .data.chapters > div > span:first-child:before {
+    content: "Chapters: ";
+}
+
+.list-table .list-table-data .data.chapters a {
+    color: var(--font-color);
+}
+
 .list-table .list-table-data .data.score {
     width: 92%;
 }
