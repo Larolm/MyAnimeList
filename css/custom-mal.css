@@ -1308,7 +1308,7 @@ a {
     bottom: -1px;
     position: relative;
     padding: 5px 15px;
-    width: 83%;
+    width: auto;
     display: block;
     vertical-align: unset;
     text-align: center;
