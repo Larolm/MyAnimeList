@@ -314,17 +314,17 @@ a {
 
 .header .header-title {
     position: fixed;
-    padding: 0px 1em 0 1em;
+    padding: 0px .5em 0 .5em;
     display: block;
     width: auto;
-    height: 40px;
+    height: 38px;
     text-indent: 0;
     overflow: hidden;
     background: transparent;
     z-index: 999;
-    font-size: 0;
-    top: 0;
-    font-family: Yozakura;
+    font-size: 27px;
+    top: 2px;
+    font-family: tahoma, verdana, arial;
     color: var(--main-color);
     font-weight: bold;
 }
@@ -333,6 +333,7 @@ a {
     content: var(--logo);
     font-size: 33px;
     padding: 0 .5em;
+    display:none;
 }
 
 .header .header-menu {
@@ -762,7 +763,7 @@ a {
 
 .status-menu-container .status-menu {
     display: table;
-    margin: 0 0 0 276px;
+    margin: 0 0 0 360px;
     border-collapse: separate;
     border-spacing: 0;
 }
@@ -770,14 +771,15 @@ a {
 .status-menu-container .status-menu .status-button {
     position: relative;
     display: table-cell;
-    padding: 10px .75em;
+    padding: 12px .75em 8px .75em;
     margin: 0;
-    font-family: CFSamuraiBob, 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-family: cursive, sans-serif, 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--main-color);
     cursor: pointer;
     letter-spacing: 0.8px;
+    font-weight: bold;
 }
 
 .status-menu-container .status-menu .status-button.on {
@@ -822,7 +824,7 @@ a {
  */
 .status-menu-container .search-container {
     position: absolute;
-    left: 115px;
+    left: 255px;
     top: 0;
     width: 0;
 }
@@ -842,7 +844,7 @@ a {
 
 .status-menu-container .search-container #search-box {
     display: inline-block;
-    width: 160px;
+    width: 100px;
     height: 22px;
     overflow: hidden;
     margin-top: 9px;
@@ -913,16 +915,15 @@ a {
     position: absolute;
     width: auto;
     font: inherit;
-    font-size: 12px;
     line-height: 24px;
     padding: 0 25px 0 50px;
     border-radius: 100px 2px 2px 2px;
     font-weight: bold;
     box-shadow: 1px 1px 6px #444;
-    font-family: CFSamuraiBob;
+    font-family: cursive, sans-serif, 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial;
     letter-spacing: 1.7px;
     word-spacing: .3em;
-    font-size: 19px;
+    font-size: 12px;
 }
 
 .list-unit .list-status-title .stats {
