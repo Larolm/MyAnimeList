@@ -1345,9 +1345,30 @@ a {
     color: var(--font-color);
 }
 
+.list-table .list-table-data .data.score {
+    width: 92%;
+}
+
+.list-table .list-table-data .data.score:before {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 38px;
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    color: var(--main-color);
+    text-shadow: 1px 1px 6px black;
+}
+
 .list-table .list-table-data .data.score .link {
-    font-size: 1.1em;
-    font-weight: bold
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 4px;
+    text-align: center;
+    width: 41px;
 }
 
 .list-table .list-table-data .data.title .add-edit-more {
