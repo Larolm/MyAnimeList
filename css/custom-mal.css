@@ -1209,7 +1209,7 @@ a {
     visibility: visible;
     display: table-cell;
     position: absolute;
-    background: #4682b4a8;
+    background: rgba(var(--main-color),0.5);
     color: var(--font-color);
     padding: 4px 10px !important;
     width: auto;
@@ -1235,7 +1235,7 @@ a {
 
 .list-table .list-item:hover .list-table-data .data.season a {
     display: block;
-    background: #4682b4a8;
+    background: rgba(var(--main-color),0.5);
     color: var(--font-color);
     text-align: right;
     width: auto;
@@ -1328,7 +1328,7 @@ a {
 
 .list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
     color: var(--font-color);
-    background: #4682b4c2;
+    background: rgba(var(--main-color),0.5);
     position: absolute;
     padding: 4px 10px;
     left: 0px;
