@@ -372,11 +372,11 @@ a {
     display: none;
 }
 
-.anime .header .btn-menu:after {
+.anime .header .header-menu.other .btn-menu:after {
     content: " Anime List";
 }
 
-.manga .header .btn-menu:after {
+.manga .header .header-menu.other .btn-menu:after {
     content: " Manga List";
 }
 
