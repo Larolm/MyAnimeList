@@ -333,9 +333,13 @@ a {
     right: 4px;
 }
 .header .header-menu.other {
-    top: 12px;
+    top: 7px;
     font-size: 0;
+    right: 6px;
     z-index: 2;
+    padding: 4px 15px 1px;
+    background: rgba(var(--main-color));
+    border-radius: 3px;
 }
 
 .header .header-menu .btn-menu {
@@ -420,7 +424,7 @@ a {
     display: flex;
     flex-direction: row-reverse;
     top: 5px;
-    right: 5px;
+    right: 121px;
     width: auto;
     border: none;
     z-index: 999;
