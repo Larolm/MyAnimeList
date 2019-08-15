@@ -331,7 +331,6 @@ a {
     position: absolute;
     top: 25px;
     right: 4px;
-	display: none;
 }
 .header .header-menu.other {
     top: 12px;
@@ -355,6 +354,10 @@ a {
 .header .username {
     font-weight: bold;
     font-size: 12px;
+}
+
+.header a.username:after {
+    content: " Profile";
 }
 
 .header .header-menu .list-menu {
