@@ -1293,6 +1293,7 @@ a {
 
 .list-table .list-table-data a:not(.edit-disabled):hover {
     text-decoration: underline;
+    color: var(--font-color);
 }
 
 .list-table .list-table-data a.edit-disabled {
