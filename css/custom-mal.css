@@ -4,6 +4,7 @@
 	--dark-color-semi: #000000a8;
 	--light-color: #f10834;
 	--font-color: #ffffff;
+	--font-color2: 169, 169, 169;
 	--logo: "Larolm"
 	--curve-banner: 0 125px;
 }
@@ -316,7 +317,7 @@ a {
     font-size: 27px;
     top: 2px;
     font-family: tahoma, verdana, arial;
-    color: rgba(var(--main-color), 1);
+    color: rgba(var(--font-color2));
     font-weight: bold;
 }
 
@@ -795,7 +796,7 @@ a {
     font-family: cursive, sans-serif, 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial;
     text-align: center;
     font-size: 1.1em;
-    color: rgba(var(--main-color), 1);
+    color: rgba(var(--font-color2), 1);
     cursor: pointer;
     letter-spacing: 0.8px;
     font-weight: bold;
