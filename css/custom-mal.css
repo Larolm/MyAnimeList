@@ -263,7 +263,7 @@ td {
 }
 
 a {
-    color: #1d439b;
+    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -1344,7 +1344,7 @@ a {
 .list-table .list-table-data .data.title .link {
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--font-color);
+    color: var(--font-color) !important;
     background: #000000a1;
     bottom: -1px;
     position: relative;
